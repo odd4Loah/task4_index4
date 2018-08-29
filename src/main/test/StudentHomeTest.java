@@ -70,10 +70,17 @@ public class StudentHomeTest {
         logger.debug("查询优秀学员");
         List<StudentHome> greatList = studentHomeMapper.selectGreatStudent();
 
+//        String i = greatList.toString();
+//        logger.debug("mySOS:" + i );
+
         for (StudentHome list : greatList) {
             logger.debug(list);
+            logger.debug(list.getHeadImg());
+            logger.debug(list.getUsername());
+            logger.debug(list.getUserInfo());
         }
 
+//        logger.debug(l);
         logger.debug("查询成功");
     }
 }

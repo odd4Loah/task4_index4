@@ -48,6 +48,27 @@
     <servlet-name>Tiles Dispatch Servlet</servlet-name>
     <url-pattern>*.tiles</url-pattern>
   </servlet-mapping>
+
+  <jsp-config >
+    <taglib >
+      <taglib-uri> /tags</taglib-uri >
+      <taglib-location>/WEB-INF/tlds/dateformat.tld</taglib-location >
+    </taglib >
+  </jsp-config >
+
+  <!--<servlet-mapping>-->
+    <!--<servlet-name>restInterface</servlet-name>-->
+    <!--&lt;!&ndash;/ 这是tomcat控制器默认拦截所有请求的符号&ndash;&gt;-->
+    <!--<url-pattern>/</url-pattern>-->
+  <!--</servlet-mapping>-->
+  <!--&lt;!&ndash;放行以下扩展文件&ndash;&gt;-->
+  <!--<servlet-mapping>-->
+    <!--<servlet-name>default</servlet-name>-->
+    <!--<url-pattern>*.png</url-pattern>-->
+    <!--<url-pattern>*.js</url-pattern>-->
+    <!--<url-pattern>*.css</url-pattern>-->
+    <!--&lt;!&ndash;<url-pattern>*.jpg</url-pattern>&ndash;&gt;-->
+  <!--</servlet-mapping>-->
   <!--tiles配置-->
 
   <filter>

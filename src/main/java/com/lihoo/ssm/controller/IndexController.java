@@ -1,7 +1,9 @@
 package com.lihoo.ssm.controller;
 
 import com.lihoo.ssm.model.StudentHome;
+import com.lihoo.ssm.model.StudentProfession;
 import com.lihoo.ssm.service.StudentHomeService;
+import com.lihoo.ssm.service.StudentProfessionService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -27,14 +29,34 @@ public class IndexController {
     @Autowired
     StudentHomeService studentHomeService;
 
+    @Autowired
+    StudentProfessionService studentProfessionService;
+
     @RequestMapping("/home")
     public String home(Model model) {
         List<StudentHome> selectGreatStudent = studentHomeService.selectGreatStudent();
         int countAll = studentHomeService.countAll();
         int workingCount = studentHomeService.workingCount();
+
+//        String a = selectGreatStudent.toString();
+//        logger.debug( "wow:"+a);
+
         model.addAttribute("selectGreatStudent", selectGreatStudent);
+
         model.addAttribute("countAll", countAll);
         model.addAttribute("workingCount", workingCount);
+
         return "home";
+    }
+
+    @RequestMapping("/profession")
+    public String profession(Model model) {
+        List<StudentProfession> selectAll = studentProfessionService.selectAll();
+        int countAll = studentProfessionService.countAll();
+
+        model.addAttribute("selectAll", selectAll);
+        model.addAttribute("countAll", countAll);
+
+        return "profession";
     }
 }

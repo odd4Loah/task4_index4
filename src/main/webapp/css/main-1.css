@@ -36,8 +36,9 @@
     /*text-align: left;*/
 }
 
-.icon-user:before{
-    content:url(../img/user.png);
+.icon-user{
+    vertical-align: inherit;
+    /*content:url(/img/user.png);*/
 }
 
 .study-icon {

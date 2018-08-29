@@ -60,12 +60,22 @@
                         <!--第三行-->
                         <div class="main-group">
                             <div class="main-group-left ">
-                                <span class="font-gray">成长周期</span>
-                                <span class="group-1"><strong>1-3</strong>年</span>
+                                <span class="font-gray">创建时间：</span>
+
+                                <span class="group-1">
+                                    <strong>
+                                        <datetag:date value="${li.createAt}"/>
+                                        <%--<dsim:date_s value="${li.createAt}" />--%>
+                                    </strong>
+                                </span>
                             </div>
                             <div class="main-group-right ">
-                                <span class="font-gray">稀缺程度</span>
-                                <span class="group-1"><strong>345</strong>家公司需要</span>
+                                <span class="font-gray">更新时间：</span>
+                                <span class="group-1">
+                                    <strong>
+                                        <dsim:date_s value="${li.updateAt}" />
+                                    </strong>
+                                </span>
                             </div>
                         </div>
                         <!--第四行-->

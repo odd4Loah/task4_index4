@@ -11,10 +11,14 @@
 <%@ include file="../includes/includes.jsp" %>
 
 
-<main>
 
+<main>
     <!--轮播图——bootstrap实现-->
+
+
     <div id="myCarousel" class="carousel slide">
+
+        <%--<img src="${pageContext.request.contextPath}/fonts/glyphicons-halflings-regular.svg" />--%>
         <!-- 轮播（Carousel）指标 -->
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -24,13 +28,13 @@
         <!-- 轮播（Carousel）项目 -->
         <div class="carousel-inner">
             <div class="item active">
-                <img src="../img/banner-0.png" alt="First slide">
+                <img src="${pageContext.request.contextPath}/img/banner-0.png" alt="First slide">
             </div>
             <div class="item">
-                <img src="../img/banner-1.jpg" alt="Second slide">
+                <img src="${pageContext.request.contextPath}/img/banner-1.jpg" alt="Second slide">
             </div>
             <div class="item">
-                <img src="../img/banner-2.jpg" alt="Third slide">
+                <img src="${pageContext.request.contextPath}/img/banner-2.jpg" alt="Third slide">
             </div>
         </div>
         <!-- 轮播（Carousel）导航 -->
@@ -47,29 +51,31 @@
     <div class="main-advantage container">
         <ul class=" main-advantage-items row list-style">
             <li class="col-lg-3 col-md-6 col-xs-12 main-adv-div">
-                <div class="icon"><img src="../img/rocket.png" alt=""></div>
+                <div class="icon"><img src="${pageContext.request.contextPath}/img/rocket.png" alt=""></div>
                 <h2>高效</h2>
                 <span>将五到七年的成长时间，缩短到一到三年。</span>
             </li>
             <li class="col-lg-3 col-md-6 col-xs-12 main-adv-div">
-                <div class="icon_1"><img src="../img/book.png" alt=""></div>
+                <div class="icon_1"><img src="${pageContext.request.contextPath}/img/book.png" alt=""></div>
                 <h2>规范</h2>
                 <span>标准的实战教程，不会走弯路</span>
             </li>
             <li class="col-lg-3 col-md-6 col-xs-12 main-adv-div">
-                <div class="icon_2"><img src="../img/relation.png" alt=""></div>
+                <div class="icon_2"><img src="${pageContext.request.contextPath}/img/relation.png" alt=""></div>
                 <h2>人脉</h2>
                 <span>同班好友，同院学长，技术大师，入学就混入职脉圈，为以后铺平道路。</span>
             </li>
             <li class="col-lg-3 col-md-6 col-xs-12 main-adv-div body_count">
                 <div class="study-icon">
-                    <span class="icon-user"></span>
-                    <span class="icon-user-green">${countAll - workingCount}</span><br>
+                    <%--<span style="content:url(/img/user.png);"></span>--%>
+                        <img class="icon-user" src="${pageContext.request.contextPath}/img/user.png" alt="">
+                        <span class="icon-user-green">${countAll - workingCount}</span><br>
                     <span>累计在线学习人数</span><br>
                 </div>
                 <div class="study-icon">
-                    <span class="icon-user"></span>
-                    <span class="icon-user-green">${workingCount}</span><br>
+                    <%--<span class="icon-user"></span>--%>
+                        <img class="icon-user" src="${pageContext.request.contextPath}/img/user.png" alt="">
+                        <span class="icon-user-green">${workingCount}</span><br>
                     <span>累计就业人数</span><br>
                 </div>
             </li>
@@ -80,44 +86,44 @@
         <h2>如何学习</h2>
         <ul class=" main-study-items row list-style">
             <li class="col-lg-3 col-sm-6 col-xs-12 main-study-div">
-                <img class="green-arrow img-hidden " src="../img/arrow.png" alt="">
+                <img class="green-arrow img-hidden " src="${pageContext.request.contextPath}/img/arrow.png" alt="">
                 <span class="order inline-block bgc-white font-green">1</span>
                 <span class="order-text">匹配你现在的个人情况寻找适合自己的岗位</span>
             </li>
             <li class="col-lg-3 col-sm-6 col-xs-12 main-study-div">
-                <img class="green-arrow" src="../img/arrow.png" alt="">
+                <img class="green-arrow" src="${pageContext.request.contextPath}/img/arrow.png" alt="">
                 <span class="order inline-block bgc-white font-green">2</span>
                 <span class="order-text">了解职业前景薪资待遇、竞争压力等</span>
-            </li>../
+            </li>
             <li class="col-lg-3 col-sm-6 col-xs-12 main-study-div">
-                <img class="green-arrow" src="../img/arrow.png" alt="">
+                <img class="green-arrow" src="${pageContext.request.contextPath}/img/arrow.png" alt="">
                 <span class="order inline-block bgc-white font-green">3</span>
                 <span class="order-text">掌握行业内顶级技能</span>
             </li>
             <li class="col-lg-3 col-sm-6 col-xs-12 main-study-div">
-                <img class="green-arrow" src="../img/arrow.png" alt="">
+                <img class="green-arrow" src="${pageContext.request.contextPath}/img/arrow.png" alt="">
                 <span class="order inline-block bgc-white font-green">4</span>
                 <span class="order-text">查看职业目标任务</span>
             </li>
         </ul>
         <ul class=" main-study-items row list-style">
             <li class="col-lg-3 col-sm-6 col-xs-12 main-study-div">
-                <img class="green-arrow img-hidden " src="../img/arrow.png" alt="">
+                <img class="green-arrow img-hidden " src="${pageContext.request.contextPath}/img/arrow.png" alt="">
                 <span class="order inline-block bgc-white font-green">5</span>
                 <span class="order-text">参考学习资源，掌握技能点，逐个完成任务</span>
             </li>
             <li class="col-lg-3 col-sm-6 col-xs-12 main-study-div">
-                <img class="green-arrow" src="../img/arrow.png" alt="">
+                <img class="green-arrow" src="${pageContext.request.contextPath}/img/arrow.png" alt="">
                 <span class="order inline-block bgc-white font-green">6</span>
                 <span class="order-text">加入班级，和小伙伴们互帮互助，一块学习</span>
             </li>
             <li class="col-lg-3 col-sm-6 col-xs-12 main-study-div">
-                <img class="green-arrow" src="../img/arrow.png" alt="">
+                <img class="green-arrow" src="${pageContext.request.contextPath}/img/arrow.png" alt="">
                 <span class="order inline-block bgc-white font-green">7</span>
                 <span class="order-text">选择导师，一路引导，加速自己成长</span>
             </li>
             <li class="col-lg-3 col-sm-6 col-xs-12 main-study-div">
-                <img class="green-arrow" src="../img/arrow.png" alt="">
+                <img class="green-arrow" src="${pageContext.request.contextPath}/img/arrow.png" alt="">
                 <span class="order inline-block bgc-white font-green">8</span>
                 <span class="order-text">完成职业技能，升级业内大牛</span>
             </li>
@@ -127,42 +133,16 @@
     <div class="main-student container">
         <h2>优秀学员展示</h2>
         <ul class=" main-student-items row list-style">
-            <li class="col-lg-3 col-sm-6 col-xs-12 main-student-div">
-                <div class="student-show">
-                    <img class="student-head-icon"  src="../img/headportrait1.png" alt="">
-                    <h3>技术顾问：大熊</h3>
-                    <span class="student-info">百度技术总监：互联网基础服务领域,从事虚拟主机、云服务器、域名。
-                          曾任新网高级技术经理,负责技术研发、团队管理与建设。
-                        </span>
-                </div>
-            </li>
-            <li class="col-lg-3 col-sm-6 col-xs-12 main-student-div">
-                <div class="student-show">
-                    <img class="student-head-icon"  src="../img/headportrait2.png" alt="">
-                    <h3>技术顾问：哆啦A梦</h3>
-                    <span class="student-info">百度技术总监：互联网基础服务领域,从事虚拟主机、云服务器、域名。
-                          曾任新网高级技术经理,负责技术研发、团队管理与建设。
-                        </span>
-                </div>
-            </li>
-            <li class="col-lg-3 col-sm-6 col-xs-12 main-student-div">
-                <div class="student-show">
-                    <img class="student-head-icon"  src="../img/headportrait3.png" alt="">
-                    <h3>技术顾问：静香</h3>
-                    <span class="student-info">百度技术总监：互联网基础服务领域,从事虚拟主机、云服务器、域名。
-                          曾任新网高级技术经理,负责技术研发、团队管理与建设。
-                        </span>
-                </div>
-            </li>
-            <li class="col-lg-3 col-sm-6 col-xs-12 main-student-div">
-                <div class="student-show">
-                    <img class="student-head-icon"  src="../img/headportrait4.png" alt="">
-                    <h3>技术顾问：胖虎</h3>
-                    <span class="student-info">百度技术总监：互联网基础服务领域,从事虚拟主机、云服务器、域名。
-                          曾任新网高级技术经理,负责技术研发、团队管理与建设。
-                        </span>
-                </div>
-            </li>
+            <c:forEach items="${selectGreatStudent}" var="li">
+                <li class="col-lg-3 col-sm-6 col-xs-12 main-student-div">
+                    <div class="student-show">
+                        <img class="student-head-icon"
+                             src="${pageContext.request.contextPath}/img/${li.headImg}" alt="">
+                        <h3>${li.username}</h3>
+                        <span class="student-info">${li.userInfo}</span>
+                    </div>
+                </li>
+            </c:forEach>
         </ul>
         <ul class="student-choose inline-block list-style">
             <li class="circle circle-0"></li>
@@ -176,19 +156,19 @@
         <h2>战略合作企业</h2>
         <div class="main-corp-items row">
             <a class="my-col-5 main-corp-div">
-                <img class="corp-logo" src="../img/corp01.jpg" alt="">
+                <img class="corp-logo" src="${pageContext.request.contextPath}/img/corp01.jpg" alt="">
             </a>
             <a class="my-col-5 main-corp-div">
-                <img class="corp-logo" src="../img/corp02.jpg" alt="">
+                <img class="corp-logo" src="${pageContext.request.contextPath}/img/corp02.jpg" alt="">
             </a>
             <a class="my-col-5 main-corp-div">
-                <img class="corp-logo" src="../img/corp03.jpg" alt="">
+                <img class="corp-logo" src="${pageContext.request.contextPath}/img/corp03.jpg" alt="">
             </a>
             <a class="my-col-5 main-corp-div">
-                <img class="corp-logo" src="../img/corp04.jpg" alt="">
+                <img class="corp-logo" src="${pageContext.request.contextPath}/img/corp04.jpg" alt="">
             </a>
             <a class="my-col-5 main-corp-div">
-                <img class="corp-logo" src="../img/corp05.jpg" alt="">
+                <img class="corp-logo" src="${pageContext.request.contextPath}/img/corp05.jpg" alt="">
             </a>
         </div>
     </div>

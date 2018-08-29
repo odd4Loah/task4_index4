@@ -15,8 +15,25 @@
     <definition name="home" extends="base">
         <!--HOME页-->
         <put-attribute name="main" value="/WEB-INF/jsp/main.jsp" />
-        <put-attribute name="recommend" value="/WEB-INF/jsp/recommend.jsp" />
-        <put-attribute name="profession" value="/WEB-INF/jsp/profession.jsp" />
+        <put-attribute name="profession" value="" />
+        <put-attribute name="recommend" value="" />
     </definition>
+
+    <!--profession页面-->
+    <definition name="profession" extends="base">
+        <!--dieryeee-->
+        <put-attribute name="main" value="" />
+        <put-attribute name="profession" value="/WEB-INF/jsp/profession.jsp" />
+        <put-attribute name="recommend" value="" />
+    </definition>
+
+    <!--recommend页面-->
+    <definition name="recommend" extends="base">
+        <!--recommend-->
+        <put-attribute name="main" value="" />
+        <put-attribute name="profession" value="" />
+        <put-attribute name="recommend" value="/WEB-INF/jsp/recommend.jsp" />
+    </definition>
+
 </tiles-definitions>
 

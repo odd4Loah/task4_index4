@@ -29,7 +29,7 @@
             </div>
             <div class="col-sm-4 col-xs-12 foot-wechat">
                 <h4>微信公众平台</h4>
-                <img src="../img/QRcode.jpg" alt="">
+                <img src="${pageContext.request.contextPath}/img/QRcode.jpg" alt="">
             </div>
         </div>
     </div>
@@ -38,5 +38,7 @@
     </div>
 
 </footer>
-<script src="../js/jquery.min.js"></script>
-<script src="../js/bootstrap.min.js"></script>
+
+<%--<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>--%>
+<script src="${pageContext.request.contextPath}/js/jquery.min.js"></script>
+<script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>

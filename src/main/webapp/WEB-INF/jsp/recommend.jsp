@@ -11,4 +11,6 @@
 <%@ include file="../includes/includes.jsp" %>
 
 
-<h3 style="background-color: #29b078;">内部推荐展示</h3>
+<h3 style="background-color: #5bc0de;">内部推荐展示</h3>
+
+
