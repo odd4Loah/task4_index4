@@ -32,7 +32,7 @@ public class IndexController {
     @Autowired
     StudentProfessionService studentProfessionService;
 
-    @RequestMapping("/home")
+    @RequestMapping("/index")
     public String home(Model model) {
         List<StudentHome> selectGreatStudent = studentHomeService.selectGreatStudent();
         int countAll = studentHomeService.countAll();
@@ -58,5 +58,11 @@ public class IndexController {
         model.addAttribute("countAll", countAll);
 
         return "profession";
+    }
+
+    @RequestMapping("/recommend")
+    public String recommend(Model model) {
+
+        return "recommend";
     }
 }

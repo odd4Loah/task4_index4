@@ -33,14 +33,10 @@
             </div>
             <div id="example-navbar-collapse" class="collapse navbar-collapse " aria-expanded="false" style="height: 1px;">
                 <ul class="navbar-nav my-nav nav ">
-                    <li><a href="#">首页</a></li>
-
-                    <li><a href="${pageContext.response.sendRedirect("profession.jsp")}">职业</a></li>
-
-                    <li><a href="${pageContext.response.sendRedirect("http://www.baidu.com")}">推荐</a></li>
-
+                    <li><a href="${pageContext.request.contextPath}/index">首页</a></li>
+                    <li><a href="${pageContext.request.contextPath}/profession">职业</a></li>
+                    <li><a href="${pageContext.request.contextPath}/recommend">推荐</a></li>
                     <li><a href="#">关于</a></li>
-
                 </ul>
             </div>
         </div>

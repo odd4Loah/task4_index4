@@ -5,7 +5,6 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@ taglib prefix="json" uri="http://www.atg.com/taglibs/json"%>
 <%@ taglib prefix="tiles" uri="http://tiles.apache.org/tags-tiles" %>
-
 <%@ taglib prefix="datetag" uri="/WEB-INF/tlds/dateformat.tld" %>
 <%@taglib  prefix="dsim" uri="/WEB-INF/tlds/simpledateformat.tld" %>
 
