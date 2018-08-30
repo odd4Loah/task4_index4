@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+
+    <!--主页面-->
+    <definition name="real.demo" template="/WEB-INF/tilesDemo/page.jsp">
+        <!--项目-->
+        <put-attribute name="header" value="/WEB-INF/tilesDemo/h.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/tilesDemo/f.jsp" />
+    </definition>
+
+    <!--home页面-->
+    <definition name="aaa" extends="real.demo">
+        <!--HOME页-->
+        <put-attribute name="a" value="/WEB-INF/tilesDemo/a.jsp" />
+        <put-attribute name="b" value="" />
+        <put-attribute name="c" value="" />
+    </definition>
+
+    <!--profession页面-->
+    <definition name="bbb" extends="real.demo">
+        <!--dieryeee-->
+        <put-attribute name="a" value="" />
+        <put-attribute name="b" value="/WEB-INF/tilesDemo/b.jsp" />
+        <put-attribute name="c" value="" />
+    </definition>
+
+    <!--recommend页面-->
+    <definition name="ccc" extends="real.demo">
+        <!--recommend-->
+        <put-attribute name="a" value="" />
+        <put-attribute name="b" value="" />
+        <put-attribute name="c" value="/WEB-INF/tilesDemo/c.jsp" />
+    </definition>
+
+
+    <!--&lt;!&ndash;主页面&ndash;&gt;-->
+    <!--<definition name="real.demo" template="/WEB-INF/tilesDemo/page.jsp">-->
+        <!--&lt;!&ndash;项目&ndash;&gt;-->
+        <!--<put-attribute name="header" value="/WEB-INF/tilesDemo/h.jsp" />-->
+        <!--<put-attribute name="footer" value="/WEB-INF/tilesDemo/f.jsp" />-->
+    <!--</definition>-->
+
+    <!--&lt;!&ndash;home页面&ndash;&gt;-->
+    <!--<definition name="*.page" extends="real.demo">-->
+        <!--&lt;!&ndash;HOME页&ndash;&gt;-->
+        <!--<put-attribute name="body" value="/WEB-INF/tilesDemo/{1}.jsp" />-->
+    <!--</definition>-->
+
+
+</tiles-definitions>
+
