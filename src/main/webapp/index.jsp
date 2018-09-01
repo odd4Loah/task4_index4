@@ -21,12 +21,20 @@
                            cursor: pointer; width: 270px; background: #e9cda800;
                            position: fixed; top: 40px; right: 60px;">
                 </a>
-                <a href="${pageContext.request.contextPath}/indexxx">
+                <a href="${pageContext.request.contextPath}/apage">
+                    <input type="button" value="点击课堂"
+                           style="font-family: 楷体; font-size: 30px; border: none;
+                           cursor: pointer; width: 200px; background: #e9cda800;
+                           position: absolute; top: 90px; right: 155px;">
+                </a>
+
+                <a href="${pageContext.request.contextPath}/login">
                     <input type="button" value="点击登录"
                            style="font-family: 楷体; font-size: 30px; border: none;
                            cursor: pointer; width: 200px; background: #e9cda800;
-                           position: absolute; top: 90px; right: 10px;">
+                           position: absolute; top: 140px; right: 155px;">
                 </a>
+
             </div>
         </div>
 

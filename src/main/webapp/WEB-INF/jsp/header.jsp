@@ -20,6 +20,13 @@
                 <a href="#"><img class="head-icon" src="${pageContext.request.contextPath}/img/wechat.png" alt=""></a>
                 <a href="#"><img class="head-icon" src="${pageContext.request.contextPath}/img/qq.png" alt=""></a>
                 <a href="#"><img class="head-icon" src="${pageContext.request.contextPath}/img/weibo.png" alt=""></a>
+
+                <div class="login-regs">
+                    <a href="${pageContext.request.contextPath}/login">登录</a>
+                    <a href="#">|</a>
+                    <a href="${pageContext.request.contextPath}/join">注册</a>
+                </div>
+
             </div>
         </div>
     </div>
@@ -36,6 +43,7 @@
                     <li><a href="${pageContext.request.contextPath}/index">首页</a></li>
                     <li><a href="${pageContext.request.contextPath}/profession">职业</a></li>
                     <li><a href="${pageContext.request.contextPath}/recommend">推荐</a></li>
+                    <li><a href="${pageContext.request.contextPath}/list">用户列表</a></li>
                     <li><a href="#">关于</a></li>
                 </ul>
             </div>

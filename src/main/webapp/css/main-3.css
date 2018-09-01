@@ -74,7 +74,7 @@ main {
 .corp-logo {
     text-align: left;
     padding: .2rem .5rem;
-    /*float: left;*/
+    float: left;
     display: inline-block;
 }
 .corp-logo > img {

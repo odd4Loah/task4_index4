@@ -12,6 +12,13 @@ html{  font-size: 100px !important;  }
     html{  font-size: 60px !important;  }
 }
 
+@media (min-width: 1400px) {
+    .container {
+        width: 1400px;
+    }
+}
+
+
 body {
     min-width: 320px;
     font-size: .32rem;
@@ -50,6 +57,12 @@ body {
     .head-icon {
         transform: scale(.8,.8);
     }
+}
+
+.login-regs {
+    font-size: large;
+    margin-left: 47px;
+    background-color: cyan;
 }
 
 /*导航栏*/
@@ -132,7 +145,7 @@ footer {
 
 .foot-wechat {
     padding-top: .3rem;
-    text-align: right;
+    text-align: center;
 }
 @media only screen and (max-width: 768px) {
     .foot-wechat {

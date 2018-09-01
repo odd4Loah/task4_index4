@@ -18,39 +18,39 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class tilesDemoController {
 
 //    **1**
-    @RequestMapping("/apage")
-    public String demo9() {
-
-        return "aaa";
-    }
-    @RequestMapping("/bpage")
-    public String demo8() {
-
-        return "bbb";
-    }
-    @RequestMapping("/cpage")
-    public String demo7() {
-
-        return "ccc";
-    }
+//    @RequestMapping("/apage")
+//    public String demo9() {
+//
+//        return "aaa";
+//    }
+//    @RequestMapping("/bpage")
+//    public String demo8() {
+//
+//        return "bbb";
+//    }
+//    @RequestMapping("/cpage")
+//    public String demo7() {
+//
+//        return "ccc";
+//    }
 
 //    **2**
-//    @RequestMapping("/a")
-//    public String demo1() {
-//
-//        return "a.page";
-//    }
-//
-//    @RequestMapping("/b")
-//    public String demo2() {
-//
-//        return "b.page";
-//    }
-//
-//    @RequestMapping("/c")
-//    public String demo3() {
-//
-//        return "c.page";
-//    }
+    @RequestMapping("/apage")
+    public String demo1() {
+
+        return "a.page";
+    }
+
+    @RequestMapping("/bpage")
+    public String demo2() {
+
+        return "b.page";
+    }
+
+    @RequestMapping("/cpage")
+    public String demo3() {
+
+        return "c.page";
+    }
 
 }

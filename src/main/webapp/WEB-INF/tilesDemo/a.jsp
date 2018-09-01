@@ -3,9 +3,11 @@
 <%@ include file="../includes/includes.jsp" %>
 
 
-<h1 style="background-color: #f9e061">我是AAA</h1>
-<a href="${pageContext.request.contextPath}/bpage">
+<h1 style="background-color: #f9e061">我是AAA
+    <a href="${pageContext.request.contextPath}/bpage">
 
-    <input type="button" value="去B页">
+        <input type="button" value="去B页" style="height: 55px; width: 101px; background-color: #0000004f;">
 
-</a>
+    </a>
+</h1>
+

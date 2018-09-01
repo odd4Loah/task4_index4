@@ -13,12 +13,12 @@
     <tiles:insertAttribute name="header" />
 
     <%--1--%>
-    <tiles:insertAttribute name="a" />
-    <tiles:insertAttribute name="b" />
-    <tiles:insertAttribute name="c" />
+    <%--<tiles:insertAttribute name="a" />--%>
+    <%--<tiles:insertAttribute name="b" />--%>
+    <%--<tiles:insertAttribute name="c" />--%>
 
     <%--2--%>
-    <%--<tiles:insertAttribute name="body" />--%>
+    <tiles:insertAttribute name="body" />
 
     <tiles:insertAttribute name="footer" />
     </body>

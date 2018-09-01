@@ -43,10 +43,15 @@
         <javaClientGenerator targetPackage="com.lihoo.ssm.dao" targetProject="src\main\java" type="XMLMAPPER"/>
 
         <!--表名及对应类-->
+        <!--****-->
         <!--<table tableName="student_home">-->
             <!--<generatedKey column="id" sqlStatement="Mysql"/>-->
         <!--</table>-->
-        <table tableName="student_profession">
+        <!--<table tableName="student_profession">-->
+            <!--<generatedKey column="id" sqlStatement="Mysql"/>-->
+        <!--</table>-->
+
+        <table tableName="student_info">
             <generatedKey column="id" sqlStatement="Mysql"/>
         </table>
 

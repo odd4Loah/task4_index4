@@ -4,36 +4,33 @@
         "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 
 <tiles-definitions>
+
     <!--主页面-->
-    <definition name="base" template="/WEB-INF/jsp/layout.jsp">
+    <definition name="2real" template="/WEB-INF/jsp/login-join.jsp">
+        <!--项目-->
+    </definition>
+
+    <!--home页面-->
+    <definition name="*.pa" extends="2real">
+        <!--HOME页-->
+        <put-attribute name="body" value="/WEB-INF/jsp/{1}.jsp" />
+    </definition>
+
+
+    <!--主页面-->
+    <definition name="base" template="/WEB-INF/jsp/alayout.jsp">
         <!--项目-->
         <put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
         <put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
     </definition>
 
     <!--home页面-->
-    <definition name="home" extends="base">
+    <definition name="*.home" extends="base">
         <!--HOME页-->
-        <put-attribute name="main" value="/WEB-INF/jsp/main.jsp" />
-        <put-attribute name="profession" value="" />
-        <put-attribute name="recommend" value="" />
+        <put-attribute name="body" value="/WEB-INF/jsp/{1}.jsp" />
     </definition>
 
-    <!--profession页面-->
-    <definition name="profession" extends="base">
-        <!--dieryeee-->
-        <put-attribute name="main" value="" />
-        <put-attribute name="profession" value="/WEB-INF/jsp/profession.jsp" />
-        <put-attribute name="recommend" value="" />
-    </definition>
 
-    <!--recommend页面-->
-    <definition name="recommend" extends="base">
-        <!--recommend-->
-        <put-attribute name="main" value="" />
-        <put-attribute name="profession" value="" />
-        <put-attribute name="recommend" value="/WEB-INF/jsp/recommend.jsp" />
-    </definition>
 
 </tiles-definitions>
 

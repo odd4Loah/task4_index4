@@ -8,6 +8,7 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -27,6 +28,19 @@ public class IndexController {
 
     private static Logger logger = Logger.getLogger(IndexController.class);
 
+
+    @RequestMapping("/login")
+    public String demo1() {
+
+        return "login.pa";
+    }
+
+    @RequestMapping("/join")
+    public String demo2() {
+
+        return "join.pa";
+    }
+
     @Autowired
     StudentHomeService studentHomeService;
 
@@ -44,7 +58,7 @@ public class IndexController {
         model.addAttribute("countAll", countAll);
         model.addAttribute("workingCount", workingCount);
 
-        return "home";
+        return "main.home";
     }
 
     @Autowired
@@ -58,12 +72,14 @@ public class IndexController {
         model.addAttribute("selectAll", selectAll);
         model.addAttribute("countAll", countAll);
 
-        return "profession";
+        return "profession.home";
     }
 
     @RequestMapping("/recommend")
-    public String recommend(Model model) {
+    public String recommend(Model model, ModelMap modelMap) {
 
-        return "recommend";
+        return "recommend.home";
     }
+
+
 }
